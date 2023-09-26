@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>cocos Shader &amp; Glsl 入门（三）</title>
+      <link href="/2023/09/25/cocos-Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+      <url>/2023/09/25/cocos-Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos Shader &amp; Glsl 入门（二）</title>
+      <link href="/2020/09/26/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+      <url>/2020/09/26/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>#三丶 概述</p><blockquote><p>这篇纯理论，概述计算机从硬件到软件表现。软件是基于硬件来操作的，所以软件工程师还是需要懂一点硬件。明白硬件到软件的联系才好把软件串联到现实。</p></blockquote><h2 id="1-GPU"><a href="#1-GPU" class="headerlink" title="1. GPU"></a>1. GPU</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos Shader &amp; Glsl 入门（一）</title>
+      <link href="/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>GitHub地址：<br>版本：cocos creator 引擎版本2.4.7<br>#一丶 前言<br>  主要目的，记录总结cocos着色器的使用。虽然已经有很多的大佬分享过cocos的着色器的使用经验，但是cocos的着色器使用总体来说没有那么友好，且亦作为个人记录之用。系列只是作为一个入门文章，且效果只会是简单的，常用的效果但是一些基本的常规的操作不会提及。也是会基于前人和目前cocos论坛，博客做一些总结与补充。会详细的解释一个个shader的原理。<br>#二丶准备工作<br>  1.了解cocos creator effct的使用。<br>参见 <a href="https://docs.cocos.com/creator/manual/zh/">https://docs.cocos.com/creator/manual/zh/</a><br>   2. 了解线性代数相关知识。<br>   3. 了解GLSL基本语法。<br>参见 <a href="https://github.com/wshxbqq/GLSL-Card">https://github.com/wshxbqq/GLSL-Card</a><br>   4. cocos准备，vscode cocos effect高亮插件（如纯Glsl则在vs code中安装glsl-canvas<br>，GLSL Lint）。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+          <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+            <tag> 计算机图形学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
