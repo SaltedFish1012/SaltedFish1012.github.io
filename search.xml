@@ -5,8 +5,8 @@
     
     <entry>
       <title>cocos Shader &amp; Glsl 入门（三）</title>
-      <link href="/2023/09/25/cocos-Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-      <url>/2023/09/25/cocos-Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+      <link href="/2023/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+      <url>/2023/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -85,6 +85,33 @@
             <tag> shader </tag>
             
             <tag> 计算机图形学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos creator 无法设置刷新率</title>
+      <link href="/2020/08/20/cocos%20creator%20%E6%97%A0%E6%B3%95%E8%AE%BE%E7%BD%AE%E5%88%B7%E6%96%B0%E7%8E%87/"/>
+      <url>/2020/08/20/cocos%20creator%20%E6%97%A0%E6%B3%95%E8%AE%BE%E7%BD%AE%E5%88%B7%E6%96%B0%E7%8E%87/</url>
+      
+        <content type="html"><![CDATA[<p>cocos creator版本2.4.2，测试了setFrameRate()设置未30&#x2F;60的情况下帧率无效。<br>通过查看cocos源码CCGame.js<br><img src="/source/img/cocos1.png" alt="image.png"><br>可知在非原生平台下，设置fps为60&#x2F;30时，实际设置的循环是requestAnimationFrame的循环中。而只有在native平台或者设置的fps值不为这两个值时，才会进入_settime的定时器中。而设置为30时是将目前的刷新率减半。<br><img src="/source/img/cocos2.png" alt="image.png"><br>当前版本可以通过不设置为这两个值来更新。或者直接删除判断为requestAnimationFrame的代码分别在_setAnimFrame和_runMainLoop中。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> bug </tag>
             
         </tags>
       
