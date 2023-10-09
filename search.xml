@@ -4,11 +4,44 @@
   
     
     <entry>
+      <title>cocos Shader &amp; Glsl 入门（一）</title>
+      <link href="/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/"/>
+      <url>/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>版本：cocos creator 引擎版本2.4.11</p></blockquote><p>之前接到一个需求要求在游戏场景中显示一个webview的广告，在广告之上还要有游戏的UI。但是<br>cocos creator的webview是和游戏不在同一层级的。查看了一下网络上也没有类似的方案，所以做一个记录。<br>首先目标平台是Android，在Android端cocos的webview是在Android上调用其webview来实现的，而游戏的又是另外的view，<br>所以就导致了不能随意更改webview的层级。 </p><p>翻到cocos-andriod源码看到webview的层级是被设置在了最顶层  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+            <tag> 计算机图形学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>cocos Shader &amp; Glsl 入门（五）</title>
       <link href="/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/"/>
       <url>/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/</url>
       
-        <content type="html"><![CDATA[<p>#五丶 cocos creator Shader 示例</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="马赛克效果"><a href="#马赛克效果" class="headerlink" title="马赛克效果"></a>马赛克效果</h2><p>马赛克效果既在片段着色器中对像素进行区域化处理，使其分区域显示集中颜色。<br><code>float x = floor(v_uv0.x*100.0)/100.0;</code><br><code>float y = floor(v_uv0.y*100.0)/100.0;</code><br><code>vec4 mask = texture2D(texture, vec2(x,y));</code><br><code>gl_FragColor = mask;</code></p><h2 id="边缘光效果"><a href="#边缘光效果" class="headerlink" title="边缘光效果"></a>边缘光效果</h2><p>边缘光效果既使纹理的边缘色块色值一致。</p>]]></content>
+        <content type="html"><![CDATA[<p>#五丶 cocos creator Shader 示例</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="马赛克效果"><a href="#马赛克效果" class="headerlink" title="马赛克效果"></a>马赛克效果</h2><p>马赛克效果既在片段着色器中对像素进行区域化处理，使其分区域显示集中颜色。<br><code>float x = floor(v_uv0.x*100.0)/100.0;</code><br><code>float y = floor(v_uv0.y*100.0)/100.0;</code><br><code>vec4 mask = texture2D(texture, vec2(x,y));</code><br><code>gl_FragColor = mask;</code></p><h2 id="边缘光效果"><a href="#边缘光效果" class="headerlink" title="边缘光效果"></a>边缘光效果</h2><p>边缘光效果既使纹理的边缘色块色值一致。</p><h2 id="幻灯片转场效果"><a href="#幻灯片转场效果" class="headerlink" title="幻灯片转场效果"></a>幻灯片转场效果</h2><h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><pre><code>vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x)) ;    if (v_uv0.y &gt; t || v_uv0.x &gt; t)&#123;    gl_FragColor = texColor1;    &#125;else&#123;    gl_FragColor = texColor2;    &#125;</code></pre><h3 id="推入"><a href="#推入" class="headerlink" title="推入"></a>推入</h3><pre><code>void main () &#123;    vec4 resColor = vec4(0.0,0.0,0.0,1.0);    float R = 1.0 - abs(cos(cc_time.x));    if (v_uv0.x &gt;= R)    resColor = texture(texture, vec2(v_uv0.x - clamp(R,0.0,1.0), v_uv0.y));    else    resColor = texture(outTexture, vec2(v_uv0.x - R + 1.0, v_uv0.y));    gl_FragColor = resColor;&#125;</code></pre><h3 id="百叶窗"><a href="#百叶窗" class="headerlink" title="百叶窗"></a>百叶窗</h3><pre><code>float random(vec2 st) &#123;    return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;    vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x));    vec4 resColor = vec4(t,0.0,0.0,1.0);    vec2 gridNum = vec2(55.0,42.0);    float randomNum = random(floor(v_uv0.x * gridNum)/ gridNum);    float randomNum2 = random(floor(v_uv0.y * gridNum)/ gridNum);    if (t &lt;= randomNum )  //&amp;&amp; cc_time.x &lt;= randomNum2        resColor = texColor1;    else        resColor = texColor2;            gl_FragColor = resColor;&#125;</code></pre><h3 id="融入"><a href="#融入" class="headerlink" title="融入"></a>融入</h3><pre><code>float random(vec2 st) &#123;    return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;    vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x))*10.0;    vec4 resColor = vec4(0.0,0.0,0.0,1.0);    if (t &lt; 10.)&#123;    float c = t/10.;    resColor = mix(texColor1, texColor2,c);    &#125;else&#123;    resColor = texColor2;    &#125;                gl_FragColor = resColor;&#125;</code></pre><h3 id="擦除"><a href="#擦除" class="headerlink" title="擦除"></a>擦除</h3><pre><code> float random(vec2 st) &#123;  return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;vec4 texColor1 = texture(texture, v_uv0);vec4 texColor2 = texture(outTexture, v_uv0);float t = abs(cos(cc_time.x));vec4 resColor = vec4(1.0,0.98,0.99,0.2);if (t &gt; v_uv0.x)&#123;  resColor = mix(resColor,texColor2,t);&#125;else&#123;  resColor = mix(texColor1,resColor,t);&#125;gl_FragColor = resColor;&#125;</code></pre><h3 id="旋转"><a href="#旋转" class="headerlink" title="旋转"></a>旋转</h3><pre><code>#define PI 3.1415926vec2 transform(vec2 texCoord,float theta,float zOffset)&#123;    vec2 res = texCoord - 0.5;    // 从 (0.5,0.5) 移动到 (0,0)    // 执行旋转和投影（投影本质上是剪切）    res.x = res.x / cos(theta);    res.y = res.y / (1.0 - res.x * sin(theta));    res.x = res.x  / (1.0 - res.x * sin(theta));    res = res * (1.0 + zOffset);    // 执行 z 方向的位移，经过投影后，整体视作缩放    res = res + 0.5;    // 从 (0,0) 移动到 (0.5,0.5)    return res;&#125;void main()&#123;    float t = abs(cos(cc_time.x));    // 图片在z方向上的偏移量    float zOffset = 0.2 - abs(0.4*t - 0.2);    vec2 texCoordAfterTransform = transform(v_uv0, t*PI, zOffset);    vec4 resColor = vec4(t,0.0,0.0,1.0);    vec4 texColor1 = texture(texture, texCoordAfterTransform);    vec4 texColor2 = texture(outTexture, vec2(1.0 - texCoordAfterTransform.x, texCoordAfterTransform.y));    if (t &lt;= 0.5)        resColor = texColor1;    else        resColor = texColor2;            gl_FragColor = resColor;&#125;</code></pre>]]></content>
       
       
       <categories>
@@ -41,7 +74,7 @@
       <link href="/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/"/>
       <url>/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/</url>
       
-        <content type="html"><![CDATA[<p>#四丶 cocos creator Shader</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="effct"><a href="#effct" class="headerlink" title="effct"></a>effct</h2><p>首先在引擎中创建一个effct，打开之后看到分成三个部分<br><img src="/source/img/effect1.png" alt="effect1.png"><br>既图中的渲染流程清单，顶点着色器，片段着色器。详细说明在图中也有说明。<br>因为目前cocos版本的shader是基于GLSL 300 ES的。所以按照GLSL的语法即可。</p>]]></content>
+        <content type="html"><![CDATA[<p>#四丶 cocos creator Shader</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="effct"><a href="#effct" class="headerlink" title="effct"></a>effct</h2><p>首先在引擎中创建一个effct，打开之后看到分成三个部分<br><img src="/source/img/effect1.png" alt="effect1.png"><br>既图中的渲染流程清单，顶点着色器，片段着色器。详细说明在图中也有说明。<br>因为目前cocos版本的shader是基于GLSL 300 ES的。所以按照GLSL的语法即可。</p><h1 id="cocos"><a href="#cocos" class="headerlink" title="cocos"></a>cocos</h1><p>cocos shader与GLSL的一些宏定义上有是有区别的，在cocos creator源码的BaseRender中声明了这些cocos shader使用的宏定义</p><blockquote><pre><code>static const size_t cc_lightDirection;static const size_t cc_lightColor;static const size_t cc_lightPositionAndRange;static const size_t cc_shadow_map[4];static const size_t cc_shadow_map_lightViewProjMatrix;static const size_t cc_shadow_map_info;static const size_t cc_shadow_map_bias;static const size_t cc_shadow_lightViewProjMatrix;static const size_t cc_shadow_info;static const size_t cc_matView;static const size_t cc_matViewInv;static const size_t cc_matWorld;static const size_t cc_matWorldIT;static const size_t cc_matProj;static const size_t cc_matViewProj;static const size_t cc_cameraPos;static const size_t cc_time;</code></pre></blockquote><blockquote><p>文档: <a href="https://docs.cocos.com/creator3d/manual/zh/material-system/builtin-shader-uniforms.html">https://docs.cocos.com/creator3d/manual/zh/material-system/builtin-shader-uniforms.html</a></p></blockquote>]]></content>
       
       
       <categories>
@@ -137,8 +170,8 @@
     
     <entry>
       <title>cocos Shader &amp; Glsl 入门（一）</title>
-      <link href="/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-      <url>/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      <link href="/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%20copy/"/>
+      <url>/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%20copy/</url>
       
         <content type="html"><![CDATA[<blockquote><p>GitHub地址：<br>版本：cocos creator 引擎版本2.4.7<br>#一丶 前言<br>  主要目的，记录总结cocos着色器的使用。虽然已经有很多的大佬分享过cocos的着色器的使用经验，但是cocos的着色器使用总体来说没有那么友好，且亦作为个人记录之用。系列只是作为一个入门文章，且效果只会是简单的，常用的效果但是一些基本的常规的操作不会提及。也是会基于前人和目前cocos论坛，博客做一些总结与补充。会详细的解释一个个shader的原理。<br>#二丶准备工作<br>  1.了解cocos creator effct的使用。<br>参见 <a href="https://docs.cocos.com/creator/manual/zh/">https://docs.cocos.com/creator/manual/zh/</a><br>   2. 了解线性代数相关知识。<br>   3. 了解GLSL基本语法。<br>参见 <a href="https://github.com/wshxbqq/GLSL-Card">https://github.com/wshxbqq/GLSL-Card</a><br>   4. cocos准备，vscode cocos effect高亮插件（如纯Glsl则在vs code中安装glsl-canvas<br>，GLSL Lint）。</p></blockquote>]]></content>
       
