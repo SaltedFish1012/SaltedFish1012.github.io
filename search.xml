@@ -4,16 +4,88 @@
   
     
     <entry>
-      <title>cocos Shader &amp; Glsl 入门（三）</title>
-      <link href="/2023/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-      <url>/2023/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+      <title>cocos Shader &amp; Glsl 入门（五）</title>
+      <link href="/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/"/>
+      <url>/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>#五丶 cocos creator Shader 示例</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="马赛克效果"><a href="#马赛克效果" class="headerlink" title="马赛克效果"></a>马赛克效果</h2><p>马赛克效果既在片段着色器中对像素进行区域化处理，使其分区域显示集中颜色。<br><code>float x = floor(v_uv0.x*100.0)/100.0;</code><br><code>float y = floor(v_uv0.y*100.0)/100.0;</code><br><code>vec4 mask = texture2D(texture, vec2(x,y));</code><br><code>gl_FragColor = mask;</code></p><h2 id="边缘光效果"><a href="#边缘光效果" class="headerlink" title="边缘光效果"></a>边缘光效果</h2><p>边缘光效果既使纹理的边缘色块色值一致。</p>]]></content>
       
       
       <categories>
           
           <category> 计算机技术 </category>
+          
+          <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos Shader &amp; Glsl 入门（四）</title>
+      <link href="/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/"/>
+      <url>/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/</url>
+      
+        <content type="html"><![CDATA[<p>#四丶 cocos creator Shader</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="effct"><a href="#effct" class="headerlink" title="effct"></a>effct</h2><p>首先在引擎中创建一个effct，打开之后看到分成三个部分<br><img src="/source/img/effect1.png" alt="effect1.png"><br>既图中的渲染流程清单，顶点着色器，片段着色器。详细说明在图中也有说明。<br>因为目前cocos版本的shader是基于GLSL 300 ES的。所以按照GLSL的语法即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+          <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos Shader &amp; Glsl 入门（三）</title>
+      <link href="/2020/09/27/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+      <url>/2020/09/27/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>#四丶着色器</p><h2 id="顶点着色器（Vertex-Shader）"><a href="#顶点着色器（Vertex-Shader）" class="headerlink" title="顶点着色器（Vertex Shader）"></a>顶点着色器（Vertex Shader）</h2><p>顶点着色器的功能是根据输入的顶点数据和Uniform数据（如果有），来填写当前顶点 内置的输出变量 ，并将一些有用数据传递给下一阶段。</p><p>一个核心的顶点着色器模板如下：<br><code>layout(location = 0) in vec2 position;</code></p><p><code>out gl_PerVertex &#123;</code><br><code>    vec4 gl_Position;</code><br><code>&#125;;</code></p><p><code>void main()&#123;</code><br>    <code>gl_Position = vec4(position,0.0f,1.0f);</code><br><code>&#125;</code></p><ul><li>layout(location &#x3D; 0) 代表了值对应流水线创建时顶点输入布局中 索引为0 的顶点属性</li><li>in 代表是输入变量</li><li>vec2表示该变量类型是二维向量，它需要与顶点输入布局中的格式（Float2）对应</li><li>position是输入变量的名称，它可以是任意的</li><li>out gl_PerVertex { vec4 gl_Position; }; 是顶点着色器中固定输出定义</li><li>gl_Position &#x3D; vec4(position,0.0f,1.0f);就是根据输入的顶点位置，填充顶点着色器实际的顶点数据输出</li></ul><h2 id="片段着色器（Fragment-Shader）"><a href="#片段着色器（Fragment-Shader）" class="headerlink" title="片段着色器（Fragment Shader）"></a>片段着色器（Fragment Shader）</h2><p>片段着色器的功能是根据前一阶段的输入数据和Uniform数据（如果有），写入到渲染目标的颜色附件上。</p><p>一个核心的片段着色器模板如下：<br><code>layout(location = 0) out vec4 fragColor;</code><br><code>void main()&#123;</code><br>    <code>fragColor = vec4(1,1,1,1);</code><br><code>&#125;</code> </p><ul><li>layout(location &#x3D; 0) out 表明该片段将输出到 渲染目标 索引为0的颜色附件 上，一个渲染目标往往至少包含一个颜色附件，交换链的渲染目标上就只有一个四通道的颜色附件 。</li><li>vec4代表着颜色附件具有四个颜色通道，例如RGBA8888</li><li>fragColor 是输出变量的名称，它可以是任意的</li><li>fragColor &#x3D; vec4(1,1,1,1)说明了最终的片段为不透明的白色（R&#x3D;1，G&#x3D;1，B&#x3D;1，A&#x3D;1）</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机技术 </category>
+          
+          <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
           
       </categories>
       
@@ -35,12 +107,18 @@
       <link href="/2020/09/26/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
       <url>/2020/09/26/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
       
-        <content type="html"><![CDATA[<p>#三丶 概述</p><blockquote><p>这篇纯理论，概述计算机从硬件到软件表现。软件是基于硬件来操作的，所以软件工程师还是需要懂一点硬件。明白硬件到软件的联系才好把软件串联到现实。</p></blockquote><h2 id="1-GPU"><a href="#1-GPU" class="headerlink" title="1. GPU"></a>1. GPU</h2>]]></content>
+        <content type="html"><![CDATA[<p>#三丶 概述</p><blockquote><p>这篇纯理论，概述计算机从硬件到软件表现。软件是基于硬件来操作的，所以软件工程师还是需要懂一点硬件。明白硬件到软件的联系才好把软件串联到现实。</p></blockquote><h2 id="1-GPU"><a href="#1-GPU" class="headerlink" title="1. GPU"></a>1. GPU</h2><p> GPU既图形处理器，由CPU发起到屏幕显示这一过程。而shader就是这一个流水线过程中的一部分，既渲染流水线中的可编程部分。</p>]]></content>
       
       
       <categories>
           
           <category> 计算机技术 </category>
+          
+          <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
           
       </categories>
       
@@ -102,7 +180,9 @@
       
       <categories>
           
-          <category> 计算机技术 </category>
+          <category> 游戏引擎 </category>
+          
+          <category> cocos </category>
           
       </categories>
       
