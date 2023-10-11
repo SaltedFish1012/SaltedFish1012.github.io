@@ -63,9 +63,9 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> Android </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -77,6 +77,60 @@
             <tag> cocos creator </tag>
             
             <tag> 引擎修改 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WebAssembly</title>
+      <link href="/2023/05/11/WebAssembly/"/>
+      <url>/2023/05/11/WebAssembly/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="fff52bfb818b360341f22ff0b3c2de0795b8b6cd495343f718e558b22a6f85b3">bbd8b2f372cf95320eab523bfb92f9c8dc839d6be52935bfec3705e41049c108</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 观点 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IndexedDB</title>
+      <link href="/2023/04/25/IndexedDB/"/>
+      <url>/2023/04/25/IndexedDB/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API">https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API</a><br><a href="https://www.ruanyifeng.com/blog/2018/07/indexeddb.html">https://www.ruanyifeng.com/blog/2018/07/indexeddb.html</a></p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今年有一部分的游戏业务转型到了H5平台，面临一些优化问题，其中一种常用的优化方式就是本地存储数据，减少从服务器获取数据，<br>直接从本地获取数据也能提高页面渲染的速度。但先前的数据储存方案都不适合储存大量结构化数据，如 localStorage 容量通常在 10MB 以内（各家浏览器不同），<br>储存的格式数据也有限，且不提供搜索功能，不能建立自定义的索引；因此需要一种新的解决方案，那就是 IndexedDB。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>键值对储存。IndexedDB 内部采用对象仓库存放数据。所有类型的数据都可以直接存入，包括 JavaScript 对象。对象仓库中，数据以”键值对”的形式保存，每一个数据记录都有对应的主键，主键是独一无二的，不能有重复，否则会抛出一个错误。<br>异步操作。IndexedDB 操作时不会锁死浏览器，用户依然可以进行其他操作，这与 LocalStorage 形成对比，后者的操作是同步的。异步设计是为了防止大量数据的读写，拖慢网页的表现。<br>支持事务。IndexedDB 支持事务（transaction），这意味着一系列操作步骤之中，只要有一步失败，整个事务就都取消，数据库回滚到事务发生之前的状态，不存在只改写一部分数据的情况。<br>同源限制。IndexedDB 受到同源限制，每一个数据库对应创建它的域名。网页只能访问自身域名下的数据库，而不能访问跨域的数据库。<br>储存空间大。IndexedDB 的储存空间比 localStorage 大得多，一般来说不少于 250MB，甚至没有上限（取决于硬盘大小）。<br>支持二进制储存。IndexedDB 不仅可以储存字符串，还可以储存二进制数据（ArrayBuffer 对象和 Blob 对象）。</p><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>-IDBCursor<br>-IDBCursorWithValue<br>-IDBDatabase<br>-IDBFactory<br>-IDBIndex<br>-IDBKeyRange<br>-IDBObjectStore<br>-IDBOpenDBRequest<br>-IDBRequest<br>-IDBTransaction<br>-IDBVersionChangeEvent</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 优化 </tag>
+            
+            <tag> web开发技术 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
       
@@ -154,11 +208,11 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -187,11 +241,11 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -220,11 +274,11 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -253,11 +307,11 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -286,11 +340,11 @@
       
       <categories>
           
-          <category> 游戏引擎 </category>
-          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
+          
+          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -330,9 +384,9 @@
       
         <tags>
             
-            <tag> bug </tag>
-            
             <tag> cocos creator </tag>
+            
+            <tag> bug </tag>
             
         </tags>
       
