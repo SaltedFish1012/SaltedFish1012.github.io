@@ -4,16 +4,95 @@
   
     
     <entry>
-      <title>cocos Shader &amp; Glsl 入门（一）</title>
-      <link href="/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/"/>
-      <url>/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/</url>
+      <title>读《悲剧的诞生》-酒神精神</title>
+      <link href="/2023/10/02/%E8%AF%BB%E3%80%8A%E6%82%B2%E5%89%A7%E7%9A%84%E8%AF%9E%E7%94%9F%E3%80%8B/"/>
+      <url>/2023/10/02/%E8%AF%BB%E3%80%8A%E6%82%B2%E5%89%A7%E7%9A%84%E8%AF%9E%E7%94%9F%E3%80%8B/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>版本：cocos creator 引擎版本2.4.11</p></blockquote><p>之前接到一个需求要求在游戏场景中显示一个webview的广告，在广告之上还要有游戏的UI。但是<br>cocos creator的webview是和游戏不在同一层级的。查看了一下网络上也没有类似的方案，所以做一个记录。<br>首先目标平台是Android，在Android端cocos的webview是在Android上调用其webview来实现的，而游戏的又是另外的view，<br>所以就导致了不能随意更改webview的层级。 </p><p>翻到cocos-andriod源码看到webview的层级是被设置在了最顶层  </p>]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="fff52bfb818b360341f22ff0b3c2de0795b8b6cd495343f718e558b22a6f85b3">bbd8b2f372cf95320eab523bfb92f9c8dc839d6be52935bfec3705e41049c108</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
           
+          <category> 读书笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>严法宽行</title>
+      <link href="/2023/09/25/%E4%B8%A5%E6%B3%95%E5%AE%BD%E8%A1%8C/"/>
+      <url>/2023/09/25/%E4%B8%A5%E6%B3%95%E5%AE%BD%E8%A1%8C/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="c53b1b4b24508c69a478fafd3a66cddae9dbb4dfde4c88b03fcc24f4e0db40fc">bbd8b2f372cf95320eab523bfb92f9c8c48d090891528e2b6ea3b94349e6aef74eaa791ba45695f9e0966a68b5985b05bb63625f3bf60e03f16199b25b1302ee0c572e1cb8a0e2ad9c787aa000fcc5f9329638b74f69682fc47dc801efe38720fe4534e4082d63c0cd73b36defa0d8010c53d9965ee69a827ef0597b907c40cdd6d5d8901bc4eab3ddee77eb0a5f5ae9664b306f482f06ab10ca821c2b968166aa1c78bfa6f0e3ef5fc983bd9979440372ad8cdcf85ff2ce2e9f2b6c43372fc8932265ac2205f70876eea51445be1aa5c199e1827b53f407312d5016462fb21d654b3f78a31bdbc4c3f5140eec97889fa354ffa845752db9614b552962d66c433d1f0d8324c6e2936f45429b3bb04126645797bbf50b6a9ebe22b9884a1cbdd902bec70eeed3894611a70a55302258b5b58518d51604f51efbf44b2de8e3419819e50c375bd59d38726dc8133b03f79e8135a5f09c784d90ebf32e7c07fd877969f8d3feedab3804180b1cfb633525303ffc7320ba40ffb92731190046494f3451e0528144adc435aab0ed850591cebbc538cb283243fbf941df0c60d0137408ebe6345f0b2b3374a1fa9e4bcfe7fa7c288a1747b4d22dba878abee2da5119685669980c0fffc88ce1acdeb58b9d7189bf1d8883fa81b755261892e31df5642cfe2caa28010b2e4ec378a833511a32d2766a89f25a8ebc7d3b257dd29c41aafc3ddd2b10b0ff87be38364c26cf8207bfbc810ceb00b57b833c82d8187cccd21b5271f6d076dbe4ee8d1eb6063ec78efc27614e08f9f87050eb4f29c9867066e9fd019141554fca45c0c105b1a55ea3796cb27e62148c27c05d2517f4a7bef10163b7aa7c8d1c29f444b288e94d9e9f9c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 观点 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos creator 内嵌式webView</title>
+      <link href="/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/"/>
+      <url>/2023/05/25/cocos%20creator%20%E5%86%85%E5%B5%8C%E5%BC%8FwebView/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>版本：cocos creator 引擎版本2.4.11</p></blockquote><p>之前接到一个需求要求在游戏场景中显示一个webview的广告，在广告之上还要有游戏的UI。但是<br>cocos creator的webview是和游戏不在同一层级的。查看了一下网络上也没有类似的方案，所以做一个记录。<br>首先目标平台是Android，在Android端cocos的webview是在Android上调用其webview来实现的，而游戏的又是另外的view，<br>所以就导致了不能随意更改webview的层级。 </p><p>翻到cocos-andriod源码看到webview的层级是被设置在了最顶层,所有要做的就是<br>把游戏视图设置到最顶层。 </p><pre><code>this.mGLSurfaceView.setZOrderOnTop(true);</code></pre><p>Cocos2dxActivity.onCreateView 内，设置游戏视图层级最高</p><pre><code>    glSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);    glSurfaceView.getHolder().setFormat(PixelFormat.RGBA_8888);</code></pre><p>AppActivity.onCreateView 内，将游戏视图背景设置为透明<br>因为需要是要实现可互动式广告的webview，所以再在游戏逻辑里面捕获到触摸事件传递给Android的webview。</p><pre><code>public static void sendWebChange(int paramInt1, int paramInt2, int paramInt3, int paramInt4) &#123;        if (paramInt2 == 0)            isCanTouch = Boolean.valueOf(true);        long l = SystemClock.uptimeMillis();        MotionEvent motionEvent = MotionEvent.obtain(l, l, paramInt2, paramInt3, paramInt4, 0);        if (paramInt1 == 0) &#123;            sWeb.onTouchEvent(motionEvent);        &#125; else &#123;            sWeb2.onTouchEvent(motionEvent);        &#125;        motionEvent.recycle();    &#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏引擎 </category>
+          
           <category> Android </category>
+          
+          <category> cocos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cocos creator </tag>
+            
+            <tag> 引擎修改 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cocos creator 多纹理合批</title>
+      <link href="/2022/08/26/cocos%20creator%20%E5%A4%9A%E7%BA%B9%E7%90%86%E5%90%88%E6%89%B9/"/>
+      <url>/2022/08/26/cocos%20creator%20%E5%A4%9A%E7%BA%B9%E7%90%86%E5%90%88%E6%89%B9/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="8fddcf9bde9ec5371746d078481a82c8a8f96b1a27fa3278c64b441fc8e0663e">bbd8b2f372cf95320eab523bfb92f9c814cf980b0261e0ce4f4ad38664283fa627d1f23c88143b4fb6324b23d9a11bd58d90be483db6edd3eb2de68cda946dcb68247ec409b300d45a2fc31a238805d177b8382350f84569fd15fc3b93a8dfa11a8ab02aa0227e993129abdec90f88529a404cdcbc0de7d2801c189026a95530fb389d66b068e2245d41d2d321a0c082cbc74a6d06c43b3cf4cde78054f4799383c9d0fa49c6d054f1abaa2e68b156f16fe5dbcf89d23002ee7b4c852613e05cfd4ae9dc9641059c548ebdd9d8db9a25137195cc6e14ac9551e26937f33d1a8007c8b90ed7dead14a93d643cde2cc7ef8c10a6cc4e08eae63605476fa13d32967e5e38e95bf5feb84d7b0de7947848813d27fa6dfdb595bc897a23098a9e764e43eb34261bdd34361275d56d35497b5c0010ed6adfc809b05384a4ced35d30023b7a5d3f36875a819e517b9c886aabbc253ae0dae52c650cea5ef7d058fc8302d3b0064aa541f5845f71f9c403cc09f2b837c417cadfce8fd653d69fab4ed09a82acd715ec327c84cd5c4af335f23e2ac3dbb980de1aba853f4f856856efb085108565b9010f83de175f0a299c5b0d5cdbe582347caa0aafc7cb212515a2ea8e12203c334f320bc5a77f71100b74ad2b817f2c79948f6ed2565b95e91842576d9ee2c13335e0bd5acf8b5794a809810020f534a0c8ea3ec56225da8fb74a7cd908b913ef092362e46f1a9a7c3a4da28c9a36f60563920ce6399e279fcf91ba9c239d11ed282b581b1cd0d2ad01317c2f624c9e8a9f4dc16a5490bcdd0aa5f231aacb3a72d7cc0bb4d9b20c08857131522ec3c7515836ac284299d5704ae606347a34c1146bc44ed33746dd0e6d4204d8a45131eb34a76553216f21602d2d6d44ad92c27c11f00ccd85bd95609ec0095d6fda8d2a4398e4235dec959d15ac3bf3b1ccf1854c05c0e0eeb8e5a0510931d4ae12ac8ee3a95e0e1c21466bbed3fc3aced23b7bc0408ff0175769f546032bbe</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
           
           <category> 游戏引擎 </category>
           
@@ -26,9 +105,38 @@
             
             <tag> cocos creator </tag>
             
-            <tag> shader </tag>
+            <tag> 引擎修改 </tag>
             
-            <tag> 计算机图形学 </tag>
+            <tag> 优化相关 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Unity老版本升级bug</title>
+      <link href="/2021/03/02/Unity%E8%80%81%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7bug/"/>
+      <url>/2021/03/02/Unity%E8%80%81%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7bug/</url>
+      
+        <content type="html"><![CDATA[<p>老项目升级之后报错：</p><pre><code>error CS0246: The type or namespace name &#39;NetworkManager&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkManager&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkLobbyManager&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkConnection&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkMessage&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkBehaviour&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;NetworkTransform&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;CommandAttribute&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;Command&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0115: &#39;LobbyManager.OnStartHost()&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyManager.OnMatchCreate(bool, string, MatchInfo)&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyManager.OnDestroyMatch(bool, string)&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyManager.OnLobbyServerSceneLoadedForPlayer(GameObject, GameObject)&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyManager.OnLobbyServerPlayersReady()&#39;: no suitable method found to overrideerror CS0246: The type or namespace name &#39;MessageBase&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;MessageBase&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0115: &#39;LobbyPlayer.OnClientEnterLobby()&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyPlayer.OnStartAuthority()&#39;: no suitable method found to overrideerror CS0115: &#39;LobbyPlayer.OnClientReady(bool)&#39;: no suitable method found to overrideerror CS0246: The type or namespace name &#39;SyncVarAttribute&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;SyncVar&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;hook&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;SyncVarAttribute&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;ClientRpcAttribute&#39; could not be found (are you missing a using directive or an assembly reference?)error CS0246: The type or namespace name &#39;ClientRpc&#39; could not be found (are you missing a using directive or an assembly reference?)</code></pre><p>因为unity已经弃用了自带的Network，所以会报错，建议直接删除原来相关脚本。</p><p>如果有不想删除的话。</p><p>打开“Window”&gt;“package Manager”，然后在弹出的窗口左上角按+（加号）：Add Package from git URL</p><p>在加号下面显示的文本框里输入com.unity.multiplayer-hlapi。文本框右侧的add按钮会亮起，点击安装。package Manager界面右侧会显示安装状态，安装完毕上述全部关于Network的错误都消失了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏引擎 </category>
+          
+          <category> unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bug </tag>
+            
+            <tag> unity </tag>
             
         </tags>
       
@@ -38,19 +146,19 @@
     
     <entry>
       <title>cocos Shader &amp; Glsl 入门（五）</title>
-      <link href="/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/"/>
-      <url>/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89%20copy%202/</url>
+      <link href="/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89/"/>
+      <url>/2020/09/30/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89/</url>
       
         <content type="html"><![CDATA[<p>#五丶 cocos creator Shader 示例</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="马赛克效果"><a href="#马赛克效果" class="headerlink" title="马赛克效果"></a>马赛克效果</h2><p>马赛克效果既在片段着色器中对像素进行区域化处理，使其分区域显示集中颜色。<br><code>float x = floor(v_uv0.x*100.0)/100.0;</code><br><code>float y = floor(v_uv0.y*100.0)/100.0;</code><br><code>vec4 mask = texture2D(texture, vec2(x,y));</code><br><code>gl_FragColor = mask;</code></p><h2 id="边缘光效果"><a href="#边缘光效果" class="headerlink" title="边缘光效果"></a>边缘光效果</h2><p>边缘光效果既使纹理的边缘色块色值一致。</p><h2 id="幻灯片转场效果"><a href="#幻灯片转场效果" class="headerlink" title="幻灯片转场效果"></a>幻灯片转场效果</h2><h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><pre><code>vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x)) ;    if (v_uv0.y &gt; t || v_uv0.x &gt; t)&#123;    gl_FragColor = texColor1;    &#125;else&#123;    gl_FragColor = texColor2;    &#125;</code></pre><h3 id="推入"><a href="#推入" class="headerlink" title="推入"></a>推入</h3><pre><code>void main () &#123;    vec4 resColor = vec4(0.0,0.0,0.0,1.0);    float R = 1.0 - abs(cos(cc_time.x));    if (v_uv0.x &gt;= R)    resColor = texture(texture, vec2(v_uv0.x - clamp(R,0.0,1.0), v_uv0.y));    else    resColor = texture(outTexture, vec2(v_uv0.x - R + 1.0, v_uv0.y));    gl_FragColor = resColor;&#125;</code></pre><h3 id="百叶窗"><a href="#百叶窗" class="headerlink" title="百叶窗"></a>百叶窗</h3><pre><code>float random(vec2 st) &#123;    return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;    vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x));    vec4 resColor = vec4(t,0.0,0.0,1.0);    vec2 gridNum = vec2(55.0,42.0);    float randomNum = random(floor(v_uv0.x * gridNum)/ gridNum);    float randomNum2 = random(floor(v_uv0.y * gridNum)/ gridNum);    if (t &lt;= randomNum )  //&amp;&amp; cc_time.x &lt;= randomNum2        resColor = texColor1;    else        resColor = texColor2;            gl_FragColor = resColor;&#125;</code></pre><h3 id="融入"><a href="#融入" class="headerlink" title="融入"></a>融入</h3><pre><code>float random(vec2 st) &#123;    return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;    vec4 texColor1 = texture(texture, v_uv0);    vec4 texColor2 = texture(outTexture, v_uv0);    float t = abs(cos(cc_time.x))*10.0;    vec4 resColor = vec4(0.0,0.0,0.0,1.0);    if (t &lt; 10.)&#123;    float c = t/10.;    resColor = mix(texColor1, texColor2,c);    &#125;else&#123;    resColor = texColor2;    &#125;                gl_FragColor = resColor;&#125;</code></pre><h3 id="擦除"><a href="#擦除" class="headerlink" title="擦除"></a>擦除</h3><pre><code> float random(vec2 st) &#123;  return fract(sin(dot(st.xy,vec2(12.9898, 78.233))) * 43758.5453123);&#125;void main () &#123;vec4 texColor1 = texture(texture, v_uv0);vec4 texColor2 = texture(outTexture, v_uv0);float t = abs(cos(cc_time.x));vec4 resColor = vec4(1.0,0.98,0.99,0.2);if (t &gt; v_uv0.x)&#123;  resColor = mix(resColor,texColor2,t);&#125;else&#123;  resColor = mix(texColor1,resColor,t);&#125;gl_FragColor = resColor;&#125;</code></pre><h3 id="旋转"><a href="#旋转" class="headerlink" title="旋转"></a>旋转</h3><pre><code>#define PI 3.1415926vec2 transform(vec2 texCoord,float theta,float zOffset)&#123;    vec2 res = texCoord - 0.5;    // 从 (0.5,0.5) 移动到 (0,0)    // 执行旋转和投影（投影本质上是剪切）    res.x = res.x / cos(theta);    res.y = res.y / (1.0 - res.x * sin(theta));    res.x = res.x  / (1.0 - res.x * sin(theta));    res = res * (1.0 + zOffset);    // 执行 z 方向的位移，经过投影后，整体视作缩放    res = res + 0.5;    // 从 (0,0) 移动到 (0.5,0.5)    return res;&#125;void main()&#123;    float t = abs(cos(cc_time.x));    // 图片在z方向上的偏移量    float zOffset = 0.2 - abs(0.4*t - 0.2);    vec2 texCoordAfterTransform = transform(v_uv0, t*PI, zOffset);    vec4 resColor = vec4(t,0.0,0.0,1.0);    vec4 texColor1 = texture(texture, texCoordAfterTransform);    vec4 texColor2 = texture(outTexture, vec2(1.0 - texCoordAfterTransform.x, texCoordAfterTransform.y));    if (t &lt;= 0.5)        resColor = texColor1;    else        resColor = texColor2;            gl_FragColor = resColor;&#125;</code></pre>]]></content>
       
       
       <categories>
           
+          <category> 游戏引擎 </category>
+          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
-          
-          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -71,19 +179,19 @@
     
     <entry>
       <title>cocos Shader &amp; Glsl 入门（四）</title>
-      <link href="/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/"/>
-      <url>/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%20copy/</url>
+      <link href="/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+      <url>/2020/09/29/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89/</url>
       
         <content type="html"><![CDATA[<p>#四丶 cocos creator Shader</p><blockquote><p>基于cocos creator2.4.7版本的引擎<br><a href="https://github.com/SaltedFish1012/cocosEffctProject">https://github.com/SaltedFish1012/cocosEffctProject</a></p></blockquote><h2 id="effct"><a href="#effct" class="headerlink" title="effct"></a>effct</h2><p>首先在引擎中创建一个effct，打开之后看到分成三个部分<br><img src="/source/img/effect1.png" alt="effect1.png"><br>既图中的渲染流程清单，顶点着色器，片段着色器。详细说明在图中也有说明。<br>因为目前cocos版本的shader是基于GLSL 300 ES的。所以按照GLSL的语法即可。</p><h1 id="cocos"><a href="#cocos" class="headerlink" title="cocos"></a>cocos</h1><p>cocos shader与GLSL的一些宏定义上有是有区别的，在cocos creator源码的BaseRender中声明了这些cocos shader使用的宏定义</p><blockquote><pre><code>static const size_t cc_lightDirection;static const size_t cc_lightColor;static const size_t cc_lightPositionAndRange;static const size_t cc_shadow_map[4];static const size_t cc_shadow_map_lightViewProjMatrix;static const size_t cc_shadow_map_info;static const size_t cc_shadow_map_bias;static const size_t cc_shadow_lightViewProjMatrix;static const size_t cc_shadow_info;static const size_t cc_matView;static const size_t cc_matViewInv;static const size_t cc_matWorld;static const size_t cc_matWorldIT;static const size_t cc_matProj;static const size_t cc_matViewProj;static const size_t cc_cameraPos;static const size_t cc_time;</code></pre></blockquote><blockquote><p>文档: <a href="https://docs.cocos.com/creator3d/manual/zh/material-system/builtin-shader-uniforms.html">https://docs.cocos.com/creator3d/manual/zh/material-system/builtin-shader-uniforms.html</a></p></blockquote>]]></content>
       
       
       <categories>
           
+          <category> 游戏引擎 </category>
+          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
-          
-          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -112,11 +220,11 @@
       
       <categories>
           
+          <category> 游戏引擎 </category>
+          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
-          
-          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -145,11 +253,11 @@
       
       <categories>
           
+          <category> 游戏引擎 </category>
+          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
-          
-          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -170,19 +278,19 @@
     
     <entry>
       <title>cocos Shader &amp; Glsl 入门（一）</title>
-      <link href="/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%20copy/"/>
-      <url>/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%20copy/</url>
+      <link href="/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/09/25/cocos%20Shader%20&amp;%20Glsl%20%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
       
         <content type="html"><![CDATA[<blockquote><p>GitHub地址：<br>版本：cocos creator 引擎版本2.4.7<br>#一丶 前言<br>  主要目的，记录总结cocos着色器的使用。虽然已经有很多的大佬分享过cocos的着色器的使用经验，但是cocos的着色器使用总体来说没有那么友好，且亦作为个人记录之用。系列只是作为一个入门文章，且效果只会是简单的，常用的效果但是一些基本的常规的操作不会提及。也是会基于前人和目前cocos论坛，博客做一些总结与补充。会详细的解释一个个shader的原理。<br>#二丶准备工作<br>  1.了解cocos creator effct的使用。<br>参见 <a href="https://docs.cocos.com/creator/manual/zh/">https://docs.cocos.com/creator/manual/zh/</a><br>   2. 了解线性代数相关知识。<br>   3. 了解GLSL基本语法。<br>参见 <a href="https://github.com/wshxbqq/GLSL-Card">https://github.com/wshxbqq/GLSL-Card</a><br>   4. cocos准备，vscode cocos effect高亮插件（如纯Glsl则在vs code中安装glsl-canvas<br>，GLSL Lint）。</p></blockquote>]]></content>
       
       
       <categories>
           
+          <category> 游戏引擎 </category>
+          
           <category> 计算机技术 </category>
           
           <category> 计算机图形学 </category>
-          
-          <category> 游戏引擎 </category>
           
           <category> cocos </category>
           
@@ -222,9 +330,9 @@
       
         <tags>
             
-            <tag> cocos creator </tag>
-            
             <tag> bug </tag>
+            
+            <tag> cocos creator </tag>
             
         </tags>
       
